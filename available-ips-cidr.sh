@@ -9,7 +9,7 @@ ips=$(cat "$ip_file")
 taken_ips_string=$(echo "$ips" | grep -E -o "([0-9]{1,3}\.){3}[0-9]{1,3}" | sort -u)
 
 # Output the unique IP addresses
-echo "already taken IPs: " $taken_ips_string
+echo "already taken IPs: "
 echo "$taken_ips_string"
 
 # Declare an empty array
